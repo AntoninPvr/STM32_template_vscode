@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "driver.h": "c",
+        "gpio.h": "c",
+        "adc.h": "c",
+        "injector.h": "c",
+        "global.h": "c"
+    }
+}

@@ -1,0 +1,19 @@
+[app]
+platformio_cmd = platformio
+cubemx_cmd = "Path to STM32CubeMX.exe"
+java_cmd = "Path to STM32CubeMX/jre/bin/java.exe"
+
+[project]
+cubemx_script_content = config load ${ioc_file_absolute_path}
+	generate code ./lib/cubemx/
+	exit
+platformio_ini_patch_content = [platformio]
+	include_dir = Inc
+	src_dir = Src
+board = 
+ioc_file = stm_config.ioc
+cleanup_ignore = stm_config.ioc
+cleanup_use_git = False
+inspect_ioc = True
+last_error = 
+
